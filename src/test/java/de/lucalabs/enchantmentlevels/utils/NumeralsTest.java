@@ -19,7 +19,7 @@ public class NumeralsTest {
         );
 
         for (var testCase : testCases.entrySet()) {
-            Assertions.assertEquals(testCase.getValue(), Numerals.computeClassicRomanNumeral(testCase.getKey()));
+            Assertions.assertEquals(testCase.getValue(), Numerals.computeRomanNumeral(testCase.getKey()));
         }
     }
 }
