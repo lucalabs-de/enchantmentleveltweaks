@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "better-enchantment-levels",
+	"version": "${version}",
+	"name": "EnchantmentLevelTweaks",
+	"description": "",
+	"authors": [
+		"lucalabs-de"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/better-enchantment-levels/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"de.lucalabs.enchantmentlevels.Mod"
+		],
+		"client": [
+			"de.lucalabs.enchantmentlevels.ClientMod"
+		],
+		"fabric-datagen": [
+			"de.lucalabs.enchantmentlevels.DataGenerator"
+		]
+	},
+	"mixins": [
+		"better-enchantment-levels.mixins.json",
+		{
+			"config": "better-enchantment-levels.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
