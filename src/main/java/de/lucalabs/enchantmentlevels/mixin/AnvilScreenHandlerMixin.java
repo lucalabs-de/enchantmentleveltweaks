@@ -4,10 +4,16 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.screen.AnvilScreenHandler;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Constant;
+import org.spongepowered.asm.mixin.injection.ModifyConstant;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(AnvilScreenHandler.class)
 public class AnvilScreenHandlerMixin {
+
+    @ModifyConstant(method = "updateResult", constant = @Constant(intValue = 40))
+    private int getLevelCap(int value) { return Integer.MAX_VALUE; }
+
     @Redirect(
             method = "updateResult",
             at = @At(
@@ -21,3 +27,4 @@ public class AnvilScreenHandlerMixin {
         return Integer.MAX_VALUE;
     }
 }
+

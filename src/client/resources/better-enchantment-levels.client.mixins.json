@@ -1,11 +1,12 @@
 {
-	"required": true,
-	"package": "de.lucalabs.enchantmentlevels.mixin.client",
-	"compatibilityLevel": "JAVA_17",
-	"client": [
-      "LevelTranscriberMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "de.lucalabs.enchantmentlevels.mixin.client",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "AnvilScreenMixin",
+    "LevelTranscriberMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }
