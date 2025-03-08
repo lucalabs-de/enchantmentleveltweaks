@@ -2,16 +2,16 @@
 	"schemaVersion": 1,
 	"id": "better-enchantment-levels",
 	"version": "${version}",
-	"name": "EnchantmentLevelTweaks",
-	"description": "",
+	"name": "Limitless Leveling",
+	"description": "Removes level cap for most enchantments.",
 	"authors": [
 		"lucalabs-de"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/project/limitless-leveling",
+		"sources": "https://github.com/lucalabs-de/enchantmentleveltweaks"
 	},
-	"license": "CC0-1.0",
+	"license": "GPL v3",
 	"icon": "assets/better-enchantment-levels/icon.png",
 	"environment": "*",
 	"entrypoints": {
